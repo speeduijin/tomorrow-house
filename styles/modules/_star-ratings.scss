@@ -19,10 +19,12 @@
   @extend %star-rating-base;
   font-size: 16px;
 }
+
 .star-rating-20 {
   @extend %star-rating-base;
   font-size: 20px;
 }
+
 .star-rating-24 {
   @extend %star-rating-base;
   font-size: 24px;
