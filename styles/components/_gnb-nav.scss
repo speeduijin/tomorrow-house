@@ -4,7 +4,6 @@
   &-list {
     @include flexbox(start);
     position: relative;
-    left: -#{$padding};
   }
 
   &-item {

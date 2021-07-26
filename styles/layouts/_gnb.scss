@@ -1,4 +1,5 @@
 .gnb {
+  $padding: 8px;
   position: relative;
   border-bottom: 1px solid $border;
 
@@ -22,6 +23,7 @@
 
     a {
       display: block;
+      padding: $padding;
     }
 
     img {
@@ -71,7 +73,7 @@
 
     .logo {
       position: static;
-      margin-right: 32px;
+      margin-right: 32px - ($padding * 2);
       transform: none;
 
       img {
