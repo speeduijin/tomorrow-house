@@ -61,11 +61,11 @@
       a:hover {
         text-decoration: underline;
       }
-    }
 
-    &:not(:last-child)::after {
-      margin: 0 8px;
-      content: '|';
+      &:not(:last-child)::after {
+        margin: 0 8px;
+        content: '|';
+      }
     }
   }
 }
