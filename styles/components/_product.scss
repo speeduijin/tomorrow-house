@@ -86,11 +86,42 @@
         overflow: hidden;
         border-radius: 4px;
         opacity: 1;
+      }
 
-        img {
-          display: block;
-          width: 56px;
-        }
+      img {
+        display: block;
+        width: 56px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flexbox;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    &-slider {
+      width: 500px;
+      height: 500px;
+    }
+
+    &-thumbnail {
+      margin-right: 8px;
+    }
+
+    .thumbnail-list {
+      flex-direction: column;
+    }
+
+    .thumbnail-item {
+      margin-right: 0;
+      margin-bottom: 8px;
+
+      button,
+      img {
+        width: 75px;
+        height: 75px;
       }
     }
   }
