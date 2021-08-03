@@ -11,10 +11,12 @@
 
   .gnb {
     top: 0;
+    z-index: $gnb-level;
   }
 
   .lnb {
     top: $gnb-hight-sm;
+    z-index: $lnb-level;
   }
 
   @include responsive(T) {
