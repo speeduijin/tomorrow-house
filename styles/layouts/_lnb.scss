@@ -8,7 +8,7 @@
   overflow-x: auto;
 
   &-list {
-    @include inline-flexbox(start, normal);
+    @include inline-flexbox(start);
     height: $lnb-hight-sm;
     padding: 0 #{$grid-margin - $lnb-link-padding};
     margin-left: -#{$grid-margin};
