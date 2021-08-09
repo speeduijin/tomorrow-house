@@ -1,6 +1,4 @@
 .product-tab {
-  $grid-margin: $sm-margin + $gutter / 2;
-
   position: sticky;
   top: $gnb-hight-sm + $lnb-hight-sm;
   z-index: $product-tab-level;
