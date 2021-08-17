@@ -16,10 +16,10 @@
           content: '|';
         }
       }
-    }
 
-    dd:last-child::after {
-      content: none;
+      dd:last-child::after {
+        content: none;
+      }
     }
 
     .detail {
