@@ -5,7 +5,7 @@
 
   &-wrapper {
     @include flexbox(between);
-    height: $gnb-hight-sm - 1px;
+    height: $gnb-height-sm - 1px;
   }
 
   &-right {
@@ -34,7 +34,7 @@
 
   @include responsive(T) {
     &-wrapper {
-      height: $gnb-hight-md - 1px;
+      height: $gnb-height-md - 1px;
     }
 
     &-left {

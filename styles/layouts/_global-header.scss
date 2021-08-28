@@ -1,6 +1,6 @@
 .global-header {
   width: 100%;
-  height: $gnb-hight-sm + $lnb-hight-sm;
+  height: $gnb-height-sm + $lnb-height-sm;
 
   .gnb,
   .lnb {
@@ -15,15 +15,15 @@
   }
 
   .lnb {
-    top: $gnb-hight-sm;
+    top: $gnb-height-sm;
     z-index: $lnb-level;
   }
 
   @include responsive(T) {
-    height: $gnb-hight-md + $lnb-hight-md;
+    height: $gnb-height-md + $lnb-height-md;
 
     .lnb {
-      top: $gnb-hight-md;
+      top: $gnb-height-md;
     }
   }
 }
