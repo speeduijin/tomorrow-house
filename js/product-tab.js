@@ -39,21 +39,21 @@ const productTabPanelIdList = [
   'product-spec',
   'product-review',
   'product-inquiry',
-  'product-shiment',
+  'product-shipment',
   'product-recommendation',
 ]
 
-const productTabPanelList = productTabPanelIdList.map(() => {
+const productTabPanelList = productTabPanelIdList.map((panelId) => {
   const tabPanel = document.querySelector(`#${panelId}`)
   return tabPanel
 })
-const productTabpanelPositionMap = {}
+const productTabPanelPositionMap = {}
 
 function detectTabPanelPositioon() {
   productTabPanelList.forEach((panel) => {
     const id = panel.getAttribute('id')
     const position = window.scrollY + panel.getBoundingClientRect().top
-    productTabpanelPositionMap[id] = position
+    productTabPanelPositionMap[id] = position
   })
 }
 
