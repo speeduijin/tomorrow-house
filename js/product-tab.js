@@ -34,3 +34,28 @@ productTabButtonList.forEach((button) => {
   button.addEventListener('click', toggleActiveTab)
   button.addEventListener('click', scrollToTabPanel)
 })
+
+const productTabPanelIdList = [
+  'product-spec',
+  'product-review',
+  'product-inquiry',
+  'product-shiment',
+  'product-recommendation',
+]
+
+const productTabPanelList = productTabPanelIdList.map(() => {
+  const tabPanel = document.querySelector(`#${panelId}`)
+  return tabPanel
+})
+const productTabpanelPositionMap = {}
+
+function detectTabPanelPositioon() {
+  productTabPanelList.forEach((panel) => {
+    const id = panel.getAttribute('id')
+    const position = window.scrollY + panel.getBoundingClientRect().top
+    productTabpanelPositionMap[id] = position
+  })
+}
+
+window.addEventListener('load', detectTabPanelPositioon)
+window.addEventListener('resize', detectTabPanelPositioon)
