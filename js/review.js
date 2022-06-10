@@ -9,7 +9,6 @@ function toggleReviewLikeButton() {
   const isLiked = this.classList.contains('btn-primary')
   const textElement = this.nextElementSibling
   const reviewCardFooter = this.parentNode
-  console.log(textElement)
 
   if (isLiked) {
     this.innerHTML = NOT_HELPFUL
